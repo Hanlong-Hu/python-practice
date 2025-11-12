@@ -1,3 +1,6 @@
+# mypackage/email_extraction.py
+#email_extraction.py
+
 import re
 
 def extract_email_list(file = "/home/hanlong/python-practice/data/email_exchanges_big.txt"):

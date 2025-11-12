@@ -8,7 +8,12 @@ def find_most_common_words(file= "/home/hanlong/python-practice/data/donald_spee
         counter = Counter(words)
         return counter.most_common(number)
 
-print(find_most_common_words())
+def find_most_common_words(text :str, number=10):
+    words = re.findall(r"[a-zA-Z0-9']+", text)
+    counter = Counter(words)
+    return counter.most_common(number)
+
+# print(find_most_common_words())
 
 
 
